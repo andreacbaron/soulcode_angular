@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { FormControl, Validators } from '@angular/forms';
+import { MyErrorStateMatcher } from './error/error';
+
 
 @Component({
   selector: 'app-root',
@@ -7,4 +10,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'form';
+  dadosUsuario = {
+    nome: '',
+    sobrenome: '',
+    email: '',
+    senha: ''
+  }
+  enviarForm() {
+    alert('Formulario enviado')
+  }
+
 }
+ 
+
